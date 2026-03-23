@@ -10,7 +10,8 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  // Connection URLs are no longer supported in the schema file; configure them in prisma.config.ts
+  // See: https://pris.ly/d/config-datasource
 }
 
 enum NotificationType {
