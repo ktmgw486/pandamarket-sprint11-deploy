@@ -29,8 +29,6 @@ app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 app.use('/notifications', notificationsRouter);
 
-console.log("test");
-
 app.use(defaultNotFoundHandler);
 app.use(globalErrorHandler);
 
